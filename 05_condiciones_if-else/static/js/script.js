@@ -178,3 +178,15 @@ function conducir() {
     alert("No puede conducir.");
   }
 }
+
+// Segunda parte de tarea
+
+/* Comparar la longitud de dos palabras
+Solicita dos palabras con prompt(). 
+Compara cuántas letras tiene cada una y 
+muestra cuál es más larga o si tienen el mismo largo.
+*/
+
+function palabras() {
+  let palabra1 = prompt("Ingrese una palabra:")
+}
