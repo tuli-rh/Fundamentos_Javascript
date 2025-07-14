@@ -147,6 +147,7 @@ Si el precio es mayor a 10000, muestra que aplica descuento.
 Si no, indica precio normal.
 */
 
+/*
 function precio() {
   // Añade un porcentaje de descuento e IVA y mostrar
   let iva = 0.19;
@@ -161,6 +162,7 @@ function precio() {
     alert("Precio normal");
   }
 }
+*/
 
 
 /* Verificar si una persona puede conducir
@@ -188,5 +190,64 @@ muestra cuál es más larga o si tienen el mismo largo.
 */
 
 function palabras() {
-  let palabra1 = prompt("Ingrese una palabra:")
+  let palabra1 = prompt("Ingrese la palabra 1: ");
+  let palabra2 = prompt("Ingrese la palabra 2: ");
+  let long1 = palabra1.length;
+  let long2 = palabra2.length;
+
+  if (long1 > long2) {
+    alert("La primera palabra es más larga que la segunda palabra.");
+  } else if (long1 < long2) {
+    alert("La segunda palabra es más larga que la primera palabra.");
+  } else {
+    alert("La primera palabra y la segunda palabra son del mismo largo.");
+  }
+}
+
+/* Validar correo electrónico
+Pide al usuario que ingrese un correo. 
+Verifica si el texto contiene el símbolo @. 
+Si lo tiene, muestra "Correo válido", si no, "Correo inválido".
+*/
+
+function email() {
+  let correo = prompt("Ingrese su correo electrónico: ");
+  if (correo.includes('@')) {
+    alert("Correo válido.");
+  } else {
+    alert("Correo inválido.");
+  }
+}
+
+/*  Verificar si un número es positivo o negativo
+Solicita un número. Muestra si es positivo, negativo o cero.
+*/
+
+function verificarNum() {
+  let numeros = parseFloat(prompt("Ingrese un número: "));
+  if (numeros > 0) {
+    alert("El número es posotivo.");
+  } else if (numeros < 0){
+    alert("El número es negativo.");
+  } else {
+    alert("El número es cero.");
+  }
+}
+
+/* Saludo personalizado según hora
+Pide la hora actual (en formato 24 horas). 
+Si es antes de las 12, muestra "Buenos días", 
+si es entre 12 y 18, "Buenas tardes", y si es mayor a 18, "Buenas noches".
+*/
+
+function saludos() {
+  let hora = parseFloat(prompt("Ingrese la hora: "));
+  if (hora < 12) {
+    alert("Buenos días");
+  } else if (hora == 12 & hora <=18){
+    alert("Buenas tardes.")
+  } else if (hora > 18 && hora < 18) {
+    aler
+  }
+
 }
