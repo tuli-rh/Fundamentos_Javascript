@@ -244,10 +244,24 @@ function saludos() {
   let hora = parseFloat(prompt("Ingrese la hora: "));
   if (hora < 12) {
     alert("Buenos días");
-  } else if (hora == 12 & hora <=18){
+  } else if (hora == 12 & hora <= 18){
     alert("Buenas tardes.")
-  } else if (hora > 18 && hora < 18) {
-    aler
+  } else if (hora > 18 && hora < 24) {
+    alert("Buenas noches.")
   }
+}
 
+/* Verificar si una palabra contiene la letra "e"
+Solicita una palabra. Verifica si contiene la letra "e" (minúscula). 
+Si la tiene, muestra "Contiene la letra 'e'", 
+si no, muestra "No contiene la letra 'e'".
+*/
+
+function letra() {
+  let letraE = prompt("Ingrese una palabra: ")
+  if (letraE.includes('e')) {
+    alert("Contiene la letra 'e'.");
+  } else {
+    alert("No contienen la letra 'e'.");
+  }
 }
