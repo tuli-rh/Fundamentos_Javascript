@@ -147,7 +147,7 @@ Si el precio es mayor a 10000, muestra que aplica descuento.
 Si no, indica precio normal.
 */
 
-/*
+
 function precio() {
   // Añade un porcentaje de descuento e IVA y mostrar
   let iva = 0.19;
@@ -155,14 +155,14 @@ function precio() {
   descuento /= 100; // operacion para llevar a decimal
   let precioDescuento = parseFloat(prompt("Ingrese el precio del producto: "));
   if (precioDescuento > 10000) {
-    alert('el valor ingreado fue: $(precioDescuento)\n
+    alert(`el valor ingreado fue: $(precioDescuento)\n
       IVA: $(precio * IVA)\n
-      ');
+      `);
   } else {
     alert("Precio normal");
   }
 }
-*/
+
 
 
 /* Verificar si una persona puede conducir
@@ -213,9 +213,9 @@ Si lo tiene, muestra "Correo válido", si no, "Correo inválido".
 function email() {
   let correo = prompt("Ingrese su correo electrónico: ");
   if (correo.includes('@')) {
-    alert("Correo válido.");
+    alert(`El correo ${correo} válido.`);
   } else {
-    alert("Correo inválido.");
+    alert(`El correo ${correo} inválido.`);
   }
 }
 
