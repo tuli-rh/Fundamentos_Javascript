@@ -1,7 +1,37 @@
+/* resetear css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 button {
     background-color: rgb(229, 170, 200);
     color: #473434;
     padding: 15px;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.btn p {
+    margin-bottom: 5px;
 }

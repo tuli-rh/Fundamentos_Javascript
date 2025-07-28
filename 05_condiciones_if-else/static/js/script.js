@@ -196,11 +196,11 @@ function palabras() {
   let long2 = palabra2.length;
 
   if (long1 > long2) {
-    alert("La primera palabra es más larga que la segunda palabra.");
+    alert(`La primera palabra (${palabra1})es más larga que la segunda palabra (${palabra2}).`);
   } else if (long1 < long2) {
-    alert("La segunda palabra es más larga que la primera palabra.");
+    alert(`La segunda palabra (${palabra2}) es más larga que la primera palabra (${palabra1}).`);
   } else {
-    alert("La primera palabra y la segunda palabra son del mismo largo.");
+    alert(`La primera palabra (${palabra1}) y la segunda palabra (${palabra2}) son del mismo largo.`);
   }
 }
 
@@ -226,11 +226,11 @@ Solicita un número. Muestra si es positivo, negativo o cero.
 function verificarNum() {
   let numeros = parseFloat(prompt("Ingrese un número: "));
   if (numeros > 0) {
-    alert("El número es posotivo.");
+    alert(`El número ${numeros} es positivo.`);
   } else if (numeros < 0){
-    alert("El número es negativo.");
+    alert(`El número ${numeros} es negativo.`);
   } else {
-    alert("El número es cero.");
+    alert(`El número ${numeros} es cero.`);
   }
 }
 
@@ -241,13 +241,13 @@ si es entre 12 y 18, "Buenas tardes", y si es mayor a 18, "Buenas noches".
 */
 
 function saludos() {
-  let hora = parseFloat(prompt("Ingrese la hora: "));
+  let hora = parseFloat(prompt("Ingrese la hora en formato 24hrs: "));
   if (hora < 12) {
-    alert("Buenos días");
-  } else if (hora == 12 & hora <= 18){
-    alert("Buenas tardes.")
+    alert(`Buenos días son las ${hora} hrs.`);
+  } else if (hora >= 12 && hora <= 18) {
+    alert (`Buenas tardes son las ${hora} hrs.`);
   } else if (hora > 18 && hora < 24) {
-    alert("Buenas noches.")
+    alert(`Buenas noches son las ${hora} hrs.`)
   }
 }
 
@@ -259,9 +259,9 @@ si no, muestra "No contiene la letra 'e'".
 
 function letra() {
   let letraE = prompt("Ingrese una palabra: ")
-  if (letraE.includes('e')) {
-    alert("Contiene la letra 'e'.");
+  if (letraE.includes("e")) {
+    alert(`La palabra ingresada (${letraE}) contiene la letra "e" (minúscula)`);
   } else {
-    alert("No contienen la letra 'e'.");
+    alert(`La palabra ingresada (${letraE}) no contiene la letra "e" (minúscula)`);
   }
 }
