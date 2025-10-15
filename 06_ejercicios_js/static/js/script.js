@@ -10,7 +10,7 @@ function verificarEtapa() {
     let edad = parseInt(prompt("Ingrese su edad: "));
     if (edad < 13) {
         alert("Eres un niño");
-    } else if (edad >= 13 && edad < 18){
+    } else if (edad >= 13 && edad < 18) {
         alert("Eres un adolescente");
     } else {
         alert("Eres un adulto")
@@ -27,7 +27,7 @@ Práctica: comparación exacta (===).
 function contraseña() {
     let password = prompt("Ingrese la contraseña: ");
     if (password === "12345") {
-        alert("Accesi permitido.")
+        alert("Acceso permitido.")
     } else {
         alert("Acceso denegado.")
     }
@@ -42,7 +42,7 @@ Si no → “No contiene la letra E”.
 Usa:
 if (palabra.toLowerCase().includes('e')) { ... }
 */
-function palabra(){
+function word() {
     let word = prompt("Ingrese una palabra: ")
     if (word.toLowerCase().includes('e')) {
         alert("La palabra contiene la letra E");
@@ -60,12 +60,12 @@ Si son iguales → “Son iguales”.
 Práctica: comparaciones dobles.
 */
 
-function number(){
-    let num = parent(prompt("Ingrese el primer número: "));
-    let num2 = parent(prompt("Ingrese el segundo número: "));
+function number() {
+    let num = parseInt(prompt("Ingrese el primer número: "));
+    let num2 = parseInt(prompt("Ingrese el segundo número: "));
     if (num > num2) {
         alert("El primer número es mayor.");
-    } else if (num < num2){
+    } else if (num < num2) {
         alert("El segundo número es mayor.");
     } else {
         alert("Son iguales.");
@@ -79,7 +79,7 @@ Si no → “Número impar”.
 Práctica: uso del operador módulo %.
 */
 function num() {
-    let numero = parent(prompt("Ingrese um número: "));
+    let numero = parseInt(prompt("Ingrese um número: "));
     if (numero % 2 == 0) {
         alert("Número par.");
     } else {
@@ -99,7 +99,7 @@ if (palabra[0].toLowerCase() === 'a') { ... }
 function palabra() {
     let word = prompt("Ingrese una palabra: ");
     if (word[0].toLowerCase() === 'a') {
-        alert("Empieza con A")       
+        alert("Empieza con A")
     } else {
         alert("No empieza con A.")
     }
@@ -114,8 +114,14 @@ Práctica: comparaciones encadenadas.
 */
 
 function temp() {
-    let temperatura = prompt("Ingrese la temperatura: ");
-    
+    let clima = parseInt(prompt("Ingrese temperatura: "));
+    if (clima < 10) {
+        alert("Hace frío.");
+    } else if (clima >= 10 && clima < 25) {
+        alert("Clima templado.");
+    } else {
+        alert("Hace Calor.");
+    }
 }
 
 
@@ -127,6 +133,17 @@ En cualquier otro caso → “Hola, visitante”.
 Práctica: varias condiciones exclusivas.
 */
 
+function nombrePersona() {
+    let nombre = prompt("Ingrese su nombre: ")
+    if (nombre.toLowerCase().includes("dany")) {
+        alert("Hola, profesor");
+    } else if (nombre.toLowerCase().includes("ely")) {
+        alert("Hola, mamá");
+    } else {
+        alert("Hola, visitante");
+    }
+}
+
 
 /* 9 -. Nota de evaluación
 Pide una nota entre 1 y 7.
@@ -136,6 +153,19 @@ Si está fuera del rango 1–7 → “Nota inválida”.
 Práctica: validaciones con límites.
 */
 
+function calificaciones() {
+  let nota = parseInt(prompt("Ingrese su nota: "));
+  if (nota > 7) {
+    alert("Valor no válido.");
+  } else if (nota >= 4) {
+    alert("Aprobado.")
+  } else if (nota < 4) {
+    alert("Reprobado");
+  } else if(nota < 1 && nota > 7){
+    alert("Nota inválida.")
+  }
+}
+
 
 /* 10-. Verificar si contiene una palabra clave
 Pide una frase.
@@ -144,3 +174,12 @@ Si no → “No contiene la palabra clave”.
 Usa:
 if (frase.toLowerCase().includes('jesús')) { ... }
 */
+
+function clave() {
+    let frase = prompt("Ingrese una frase: ");
+    if (frase.toLowerCase().includes('jesús')) {
+        alert("Tu frase tiene la palabra clave 🙌");
+    } else {
+        alert("No contiene la palabra clave");
+    }
+}
