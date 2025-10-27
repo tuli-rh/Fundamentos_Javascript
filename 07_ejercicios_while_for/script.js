@@ -75,7 +75,11 @@ Pide un número al usuario e imprime su tabla de multiplicar del 1 al 10 en un s
 */
 
 function tablaMultiplicar() {
-    let count = 1;
-    let 
+    let num = parseInt(prompt("Ingre un número: "));
+    let tablas = `Tabla de ${num}: `;
+    
+    for(let i = 1; i <= 10; i++) {
+        tablas += `\n ${num} x ${1} = `
+    }
 }
 
