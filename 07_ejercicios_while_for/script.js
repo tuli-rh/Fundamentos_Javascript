@@ -52,6 +52,7 @@ function sumaNumeros() {
     }
     alert(`${resultado} = ${suma}`)
 }
+
 /*Bucle while: Imprimir múltiplos de 2 del 1 al n (n es el límite de números a encontrar)
 Escribe un programa que use un bucle for para imprimir los múltiplos de 2 que hay entre 1 y 10 (inclusive).*/
 function imprimirNum() {
@@ -67,5 +68,14 @@ function imprimirNum() {
     alert(` ${result}`)
 }
 
+// bucles for
 
+/* Bucle for: Tabla de multiplicar
+Pide un número al usuario e imprime su tabla de multiplicar del 1 al 10 en un solo alert.
+*/
+
+function tablaMultiplicar() {
+    let count = 1;
+    let 
+}
 
