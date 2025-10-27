@@ -58,7 +58,7 @@ function imprimirNum() {
     let numero = parseInt(prompt("Ingresar número: "))
     let count = 1;
     let result = "El resultado es: "
-    while (count <= numero) {
+    while (count < numero) {
         count++
         if (count % 2 == 0) {
             result += ` ${count}`
