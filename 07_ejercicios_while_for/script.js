@@ -126,7 +126,7 @@ Ejemplo de resultado:
 El factorial de 5 es 120.
 */
 
-function sumaNumerosImpares() {
+function calcularFactorial() {
     let num = parseInt(prompt("Ingre un número para calcular su factorial: "));
     let factorial = 1;
     let largo = "1"
