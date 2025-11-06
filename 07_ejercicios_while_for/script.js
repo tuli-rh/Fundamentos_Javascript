@@ -111,12 +111,12 @@ La palabra "Programación" tiene 12 letras
 */
 
 function contarPalabra() {
-    let word = parseInt(prompt("Ingre una palabra: "));
+    let word = prompt("Ingre una palabra: ");
     let count = 0;
-    for (let i = 0; i <= word.lenght; i++) {
-        count++
+    for (let i = 0; i < word.length; i++) {
+        count++;
     }
-    alert(`La palabra ${word} tiene ${count} letras`);
+    alert(`La palabra "${word}" tiene ${count} letras`);
 }
 
 /*Bucle for: Calcular factorial
