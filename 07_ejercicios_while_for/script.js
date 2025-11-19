@@ -159,12 +159,12 @@ La suma de impares hasta 9 es 25.
 function sumaNumerosImpares() {
     let num = parseInt(prompt("Ingresa un número: "));
     let suma = 0;
-    let detalle = "";
+    let resultado = "";
 
     for (let i = 1; i <= num; i += 2) {
         suma += i;
-        detalle += i + (i + 2 <= num ? " + " : "");
+        resultado += i + (i + 2 <= num ? " + " : "");
     }
 
-    alert(`La suma de los números impares de ${num} es:\n${detalle} = ${suma}`);
+    alert(`La suma de los números impares de ${num} es:\n${resultado} = ${suma}`);
 }
