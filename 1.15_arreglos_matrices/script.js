@@ -11,7 +11,7 @@ Puedes agregar conectores o palabras que no estén en el arreglo
 let palabras = ["Juan", "corre", "rápidamente", "feliz", "parque"];
 function fraseArreglo() {
 
-    alert(`frase: ${palabras[0]} esta ${palabras[3]} y ${palabras[1]} ${palabras[2]} por el ${palabras[4]}`);
+  alert(`frase: ${palabras[0]} esta ${palabras[3]} y ${palabras[1]} ${palabras[2]} por el ${palabras[4]}`);
 }
 
 /*  Ejercicio 2: Construir frase con número, verbo, adverbio, adjetivo y sustantivo
@@ -25,7 +25,7 @@ Puedes incluir artículos o conectores ("Los", "y", etc.) según sea necesario.
 */
 let datos = [3, "gatos", "negros", "duermen", "tranquilamente"];
 function construirFrase() {
-    alert(`Frase: De los ${datos[0]} ${datos[1]} ${datos[2]} dos gatos ${datos[3]} muy ${datos[4]}`);
+  alert(`Frase: De los ${datos[0]} ${datos[1]} ${datos[2]} dos gatos ${datos[3]} muy ${datos[4]}`);
 }
 
 /*  Ejercicio 3: Suma de dos elementos en una matriz de dos dimensiones
@@ -46,9 +46,15 @@ let matriz = [
   [40, 50, 60],
   [70, 80, 90]
 ];
+
 function sumaElementos() {
-    alert(``);
+  let valor1 = matriz[0][1];  
+  let valor2 = matriz[2][0];  
+  let suma = valor1 + valor2;
+
+  alert(`La suma de ${valor1} y ${valor2} es: ${suma}`);
 }
+
 
 
 /* Ejercicio 4: Suma de dos valores en una matriz de tres niveles
@@ -70,7 +76,10 @@ let dato = [
 ];
 
 function sumaValores() {
-    alert(``);
+  let num1 = dato[0][1];
+  let num2 = dato [1][2][2][0];
+  let suma = num1 + num2;
+  alert(`La suma de ${num1} y ${num2} es ${suma}`);
 }
 
 /* Ejercicio 5: Construir frase usando datos de arreglo + matriz
@@ -94,5 +103,7 @@ let acciones = [
 ];
 
 function frase() {
-    alert(``);
+  let sujeto = sujeto[0];
+  let accion = accion[0][1];
+  alert(`${sujeto} ${accion}`);
 }
