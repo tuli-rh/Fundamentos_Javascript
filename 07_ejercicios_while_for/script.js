@@ -167,4 +167,8 @@ function sumaNumerosImpares() {
     }
 
     alert(`La suma de los números impares de ${num} es:\n${resultado} = ${suma}`);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1d41e1455bf4738cc8253ed7add84edb3bebd4bf
